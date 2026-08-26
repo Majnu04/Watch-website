@@ -1,0 +1,346 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Steel case gradient -->
+    <linearGradient id="steelCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c8cdd2"/>
+      <stop offset="20%" stop-color="#a0a8b0"/>
+      <stop offset="40%" stop-color="#d0d4d8"/>
+      <stop offset="60%" stop-color="#909aa2"/>
+      <stop offset="80%" stop-color="#b8c0c8"/>
+      <stop offset="100%" stop-color="#a0a8b0"/>
+    </linearGradient>
+    <!-- Rotating bezel gradient -->
+    <linearGradient id="bezelGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#2a5a3a"/>
+      <stop offset="50%" stop-color="#1a3a2a"/>
+      <stop offset="100%" stop-color="#2a5a3a"/>
+    </linearGradient>
+    <!-- Green sunburst dial -->
+    <radialGradient id="sunburstDial" cx="50%" cy="45%" r="55%">
+      <stop offset="0%" stop-color="#2a7a4a"/>
+      <stop offset="20%" stop-color="#1e6a3e"/>
+      <stop offset="40%" stop-color="#258048"/>
+      <stop offset="60%" stop-color="#1a5a34"/>
+      <stop offset="80%" stop-color="#1e6838"/>
+      <stop offset="100%" stop-color="#145028"/>
+    </radialGradient>
+    <!-- Sunburst rays -->
+    <radialGradient id="sunburstRays" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.06"/>
+      <stop offset="40%" stop-color="white" stop-opacity="0.02"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Steel bracelet gradient -->
+    <linearGradient id="steelBracelet" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#909aa2"/>
+      <stop offset="15%" stop-color="#b8c0c8"/>
+      <stop offset="30%" stop-color="#a0a8b0"/>
+      <stop offset="50%" stop-color="#c8cdd2"/>
+      <stop offset="70%" stop-color="#a0a8b0"/>
+      <stop offset="85%" stop-color="#b8c0c8"/>
+      <stop offset="100%" stop-color="#909aa2"/>
+    </linearGradient>
+    <!-- Bracelet link side -->
+    <linearGradient id="braceletSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a0a8b0"/>
+      <stop offset="50%" stop-color="#c0c8d0"/>
+      <stop offset="100%" stop-color="#a0a8b0"/>
+    </linearGradient>
+    <!-- Glass reflection -->
+    <radialGradient id="glassReflect" cx="40%" cy="33%" r="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.22"/>
+      <stop offset="40%" stop-color="white" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <!-- GMT hand gradient -->
+    <linearGradient id="gmtHandGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e04040"/>
+      <stop offset="50%" stop-color="#ff6060"/>
+      <stop offset="100%" stop-color="#e04040"/>
+    </linearGradient>
+    <!-- Shadow filters -->
+    <filter id="watchShadow" x="-10%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1.2" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <!-- Crown gradient -->
+    <linearGradient id="crownGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#909aa2"/>
+      <stop offset="50%" stop-color="#d0d4d8"/>
+      <stop offset="100%" stop-color="#909aa2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f0f0f0"/>
+
+  <!-- Surface shadow -->
+  <ellipse cx="200" cy="350" rx="65" ry="10" fill="#000" opacity="0.12"/>
+
+  <!-- === UPPER BRACELET (steel Oyster-style) === -->
+  <!-- Center links -->
+  <rect x="178" y="12" width="44" height="55" rx="2" fill="url(#steelBracelet)" stroke="#808890" stroke-width="0.3"/>
+  <!-- Outer links left -->
+  <rect x="162" y="14" width="16" height="51" rx="1.5" fill="url(#braceletSide)" stroke="#888e94" stroke-width="0.3"/>
+  <!-- Outer links right -->
+  <rect x="222" y="14" width="16" height="51" rx="1.5" fill="url(#braceletSide)" stroke="#888e94" stroke-width="0.3"/>
+  <!-- Link gap lines upper center -->
+  <line x1="178" y1="22" x2="222" y2="22" stroke="#888e94" stroke-width="0.5"/>
+  <line x1="178" y1="33" x2="222" y2="33" stroke="#888e94" stroke-width="0.5"/>
+  <line x1="178" y1="44" x2="222" y2="44" stroke="#888e94" stroke-width="0.5"/>
+  <line x1="178" y1="55" x2="222" y2="55" stroke="#888e94" stroke-width="0.5"/>
+  <!-- Outer link gaps -->
+  <line x1="162" y1="26" x2="178" y2="26" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="162" y1="39" x2="178" y2="39" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="162" y1="52" x2="178" y2="52" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="222" y1="26" x2="238" y2="26" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="222" y1="39" x2="238" y2="39" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="222" y1="52" x2="238" y2="52" stroke="#888e94" stroke-width="0.3"/>
+  <!-- Center polish highlight -->
+  <rect x="190" y="16" width="20" height="48" rx="1" fill="white" opacity="0.1"/>
+
+  <!-- === LOWER BRACELET (steel) === -->
+  <rect x="178" y="333" width="44" height="55" rx="2" fill="url(#steelBracelet)" stroke="#808890" stroke-width="0.3"/>
+  <rect x="162" y="335" width="16" height="51" rx="1.5" fill="url(#braceletSide)" stroke="#888e94" stroke-width="0.3"/>
+  <rect x="222" y="335" width="16" height="51" rx="1.5" fill="url(#braceletSide)" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="178" y1="343" x2="222" y2="343" stroke="#888e94" stroke-width="0.5"/>
+  <line x1="178" y1="354" x2="222" y2="354" stroke="#888e94" stroke-width="0.5"/>
+  <line x1="178" y1="365" x2="222" y2="365" stroke="#888e94" stroke-width="0.5"/>
+  <line x1="178" y1="376" x2="222" y2="376" stroke="#888e94" stroke-width="0.5"/>
+  <line x1="162" y1="347" x2="178" y2="347" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="162" y1="360" x2="178" y2="360" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="162" y1="373" x2="178" y2="373" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="222" y1="347" x2="238" y2="347" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="222" y1="360" x2="238" y2="360" stroke="#888e94" stroke-width="0.3"/>
+  <line x1="222" y1="373" x2="238" y2="373" stroke="#888e94" stroke-width="0.3"/>
+  <rect x="190" y="337" width="20" height="48" rx="1" fill="white" opacity="0.1"/>
+
+  <!-- === STEEL CASE === -->
+  <circle cx="200" cy="200" r="118" fill="url(#steelCase)" filter="url(#watchShadow)"/>
+  <circle cx="200" cy="200" r="118" fill="none" stroke="#7a828a" stroke-width="0.8"/>
+
+  <!-- === ROTATING BEZEL (green ceramic, 24h markings) === -->
+  <circle cx="200" cy="200" r="110" fill="url(#bezelGrad)" stroke="#1a3a2a" stroke-width="1.5"/>
+  <circle cx="200" cy="200" r="104" fill="none" stroke="#3a6a4a" stroke-width="0.3"/>
+
+  <!-- Bezel 24h markings -->
+  <g font-family="Arial, sans-serif" font-size="7" fill="#c8d8d0" text-anchor="middle" font-weight="bold">
+    <!-- 24/0 at 12 o'clock -->
+    <text x="200" y="100" fill="#e8f0e8">24</text>
+    <!-- 2 -->
+    <text x="242" y="106" transform="rotate(15 242 106)">2</text>
+    <!-- 4 -->
+    <text x="270" y="128" transform="rotate(30 270 128)">4</text>
+    <!-- 6 at 3 o'clock -->
+    <text x="284" y="204" transform="rotate(0 284 204)">6</text>
+    <!-- 8 -->
+    <text x="270" y="278" transform="rotate(-30 270 278)">8</text>
+    <!-- 10 -->
+    <text x="242" y="300" transform="rotate(-15 242 300)">10</text>
+    <!-- 12 at 6 o'clock -->
+    <text x="200" y="312">12</text>
+    <!-- 14 -->
+    <text x="158" y="300" transform="rotate(15 158 300)">14</text>
+    <!-- 16 -->
+    <text x="130" y="278" transform="rotate(30 130 278)">16</text>
+    <!-- 18 at 9 o'clock -->
+    <text x="116" y="204">18</text>
+    <!-- 20 -->
+    <text x="130" y="128" transform="rotate(-30 130 128)">20</text>
+    <!-- 22 -->
+    <text x="158" y="106" transform="rotate(-15 158 106)">22</text>
+  </g>
+  <!-- Bezel tick marks -->
+  <g stroke="#a0c0a8" stroke-width="0.6">
+    <line x1="200" y1="93" x2="200" y2="97"/>
+    <line x1="200" y1="303" x2="200" y2="307"/>
+    <line x1="93" y1="200" x2="97" y2="200"/>
+    <line x1="303" y1="200" x2="307" y2="200"/>
+  </g>
+  <g stroke="#708878" stroke-width="0.4">
+    <!-- Minor ticks between numbers -->
+    <line x1="220" y1="94" x2="219" y2="97.8"/>
+    <line x1="258" y1="110" x2="256" y2="113"/>
+    <line x1="278" y1="140" x2="275.5" y2="142"/>
+    <line x1="290" y1="170" x2="287.5" y2="171.5"/>
+    <line x1="300" y1="228" x2="297.5" y2="226.5"/>
+    <line x1="290" y1="260" x2="287.5" y2="258"/>
+    <line x1="278" y1="290" x2="275.5" y2="288"/>
+    <line x1="258" y1="306" x2="256" y2="303"/>
+    <line x1="220" y1="312" x2="219" y2="308.2"/>
+    <line x1="180" y1="312" x2="181" y2="308.2"/>
+    <line x1="142" y1="306" x2="144" y2="303"/>
+    <line x1="122" y1="290" x2="124.5" y2="288"/>
+    <line x1="110" y1="260" x2="112.5" y2="258"/>
+    <line x1="100" y1="228" x2="102.5" y2="226.5"/>
+    <line x1="110" y1="170" x2="112.5" y2="171.5"/>
+    <line x1="122" y1="140" x2="124.5" y2="142"/>
+    <line x1="142" y1="110" x2="144" y2="113"/>
+    <line x1="180" y1="94" x2="181" y2="97.8"/>
+  </g>
+  <!-- Bezel lume pip at 12 -->
+  <circle cx="200" cy="96" r="2.5" fill="#d8e8d0" stroke="#a0b898" stroke-width="0.3"/>
+
+  <!-- === DIAL (green sunburst) === -->
+  <circle cx="200" cy="200" r="96" fill="url(#sunburstDial)"/>
+  <circle cx="200" cy="200" r="96" fill="url(#sunburstRays)"/>
+  <circle cx="200" cy="200" r="96" fill="none" stroke="#104020" stroke-width="0.5"/>
+
+  <!-- Sunburst ray lines -->
+  <g stroke="white" stroke-width="0.15" opacity="0.1">
+    <line x1="200" y1="200" x2="200" y2="104"/>
+    <line x1="200" y1="200" x2="248" y2="112"/>
+    <line x1="200" y1="200" x2="280" y2="148"/>
+    <line x1="200" y1="200" x2="296" y2="200"/>
+    <line x1="200" y1="200" x2="280" y2="252"/>
+    <line x1="200" y1="200" x2="248" y2="288"/>
+    <line x1="200" y1="200" x2="200" y2="296"/>
+    <line x1="200" y1="200" x2="152" y2="288"/>
+    <line x1="200" y1="200" x2="120" y2="252"/>
+    <line x1="200" y1="200" x2="104" y2="200"/>
+    <line x1="200" y1="200" x2="120" y2="148"/>
+    <line x1="200" y1="200" x2="152" y2="112"/>
+  </g>
+
+  <!-- === HOUR MARKERS (applied indices) === -->
+  <!-- 12 -->
+  <rect x="195" y="108" width="10" height="18" rx="1.5" fill="#e8e8e8" filter="url(#subtleShadow)"/>
+  <rect x="197" y="110" width="6" height="14" rx="0.5" fill="#f0f0f0"/>
+  <!-- 1 -->
+  <rect x="233" y="112" width="5" height="14" rx="1" fill="#d8d8d8" transform="rotate(30 235.5 119)"/>
+  <!-- 2 -->
+  <rect x="256" y="128" width="5" height="14" rx="1" fill="#d8d8d8" transform="rotate(60 258.5 135)"/>
+  <!-- 3 -->
+  <rect x="272" y="196" width="18" height="8" rx="1.5" fill="#e8e8e8" filter="url(#subtleShadow)"/>
+  <rect x="274" y="198" width="14" height="4" rx="0.5" fill="#f0f0f0"/>
+  <!-- 4 -->
+  <rect x="256" y="258" width="5" height="14" rx="1" fill="#d8d8d8" transform="rotate(-60 258.5 265)"/>
+  <!-- 5 -->
+  <rect x="233" y="274" width="5" height="14" rx="1" fill="#d8d8d8" transform="rotate(-30 235.5 281)"/>
+  <!-- 6 -->
+  <rect x="195" y="274" width="10" height="18" rx="1.5" fill="#e8e8e8" filter="url(#subtleShadow)"/>
+  <rect x="197" y="276" width="6" height="14" rx="0.5" fill="#f0f0f0"/>
+  <!-- 7 -->
+  <rect x="162" y="274" width="5" height="14" rx="1" fill="#d8d8d8" transform="rotate(30 164.5 281)"/>
+  <!-- 8 -->
+  <rect x="139" y="258" width="5" height="14" rx="1" fill="#d8d8d8" transform="rotate(60 141.5 265)"/>
+  <!-- 9 -->
+  <rect x="110" y="196" width="18" height="8" rx="1.5" fill="#e8e8e8" filter="url(#subtleShadow)"/>
+  <rect x="112" y="198" width="14" height="4" rx="0.5" fill="#f0f0f0"/>
+  <!-- 10 -->
+  <rect x="139" y="128" width="5" height="14" rx="1" fill="#d8d8d8" transform="rotate(-60 141.5 135)"/>
+  <!-- 11 -->
+  <rect x="162" y="112" width="5" height="14" rx="1" fill="#d8d8d8" transform="rotate(-30 164.5 119)"/>
+
+  <!-- Minute ticks -->
+  <g stroke="#5a8a6a" stroke-width="0.4" opacity="0.5">
+    <line x1="200" y1="102" x2="200" y2="107"/>
+    <line x1="210" y1="102.5" x2="209.5" y2="107.2"/>
+    <line x1="219.5" y1="104.5" x2="218.5" y2="109"/>
+    <line x1="229" y1="108" x2="227.8" y2="112.2"/>
+    <line x1="237" y1="113" x2="235.6" y2="117"/>
+    <line x1="244" y1="119" x2="242.4" y2="122.8"/>
+    <line x1="250.5" y1="126" x2="248.8" y2="129.5"/>
+    <line x1="256" y1="134" x2="254.2" y2="137.3"/>
+    <line x1="260" y1="142.5" x2="258.2" y2="145.5"/>
+    <line x1="264" y1="152" x2="262.2" y2="154.8"/>
+    <line x1="266.5" y1="161.5" x2="264.8" y2="164"/>
+    <line x1="268.5" y1="171.5" x2="266.8" y2="173.6"/>
+    <line x1="270" y1="182" x2="268.4" y2="183.8"/>
+    <line x1="270" y1="192" x2="268" y2="192"/>
+    <line x1="270" y1="208" x2="268" y2="208"/>
+    <line x1="268.5" y1="218" x2="266.8" y2="216.4"/>
+    <line x1="266.5" y1="228" x2="264.8" y2="226"/>
+    <line x1="264" y1="238" x2="262.2" y2="235.2"/>
+    <line x1="260" y1="248" x2="258.2" y2="244.5"/>
+    <line x1="256" y1="257" x2="254.2" y2="253.7"/>
+    <line x1="250.5" y1="265" x2="248.8" y2="261.5"/>
+    <line x1="244" y1="272" x2="242.4" y2="268.2"/>
+    <line x1="237" y1="278" x2="235.6" y2="274"/>
+    <line x1="229" y1="283" x2="227.8" y2="278.8"/>
+    <line x1="219.5" y1="286" x2="218.5" y2="281.5"/>
+    <line x1="210" y1="288" x2="209.5" y2="283.3"/>
+    <line x1="200" y1="289" x2="200" y2="284"/>
+    <line x1="190" y1="288" x2="190.5" y2="283.3"/>
+    <line x1="180.5" y1="286" x2="181.5" y2="281.5"/>
+    <line x1="171" y1="283" x2="172.2" y2="278.8"/>
+    <line x1="163" y1="278" x2="164.4" y2="274"/>
+    <line x1="156" y1="272" x2="157.6" y2="268.2"/>
+    <line x1="150" y1="265" x2="151.2" y2="261.5"/>
+    <line x1="144" y1="257" x2="145.8" y2="253.7"/>
+    <line x1="140" y1="248" x2="141.8" y2="244.5"/>
+    <line x1="136" y1="238" x2="137.8" y2="235.2"/>
+    <line x1="133.5" y1="228" x2="135.2" y2="226"/>
+    <line x1="131.5" y1="218" x2="133.2" y2="216.4"/>
+    <line x1="130" y1="208" x2="132" y2="208"/>
+    <line x1="130" y1="192" x2="132" y2="192"/>
+    <line x1="131.5" y1="182" x2="133.2" y2="183.6"/>
+    <line x1="133.5" y1="171.5" x2="135.2" y2="173.4"/>
+    <line x1="136" y1="161.5" x2="137.8" y2="164"/>
+    <line x1="140" y1="152" x2="141.8" y2="154.8"/>
+    <line x1="144" y1="142.5" x2="145.8" y2="145.5"/>
+    <line x1="150" y1="134" x2="151.2" y2="137.3"/>
+    <line x1="156" y1="126" x2="157.6" y2="129.5"/>
+    <line x1="163" y1="119" x2="164.4" y2="122.8"/>
+    <line x1="171" y1="113" x2="172.2" y2="117"/>
+    <line x1="180.5" y1="108" x2="181.5" y2="112.2"/>
+    <line x1="190" y1="104.5" x2="190.5" y2="109"/>
+  </g>
+
+  <!-- === DATE WINDOW === -->
+  <rect x="254" y="194" width="22" height="14" rx="2" fill="#0a2818" stroke="#3a6a4a" stroke-width="0.5"/>
+  <text x="265" y="205" font-family="Arial, sans-serif" font-size="10" fill="#d0e0d0" text-anchor="middle" font-weight="bold">26</text>
+
+  <!-- === BRAND TEXT === -->
+  <text x="200" y="165" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#b0d8b8" text-anchor="middle" letter-spacing="3" font-weight="bold">CHRONOHAUS</text>
+  <text x="200" y="174" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#70a878" text-anchor="middle" letter-spacing="1.5">NAVIGATOR GMT</text>
+  <text x="200" y="238" font-family="Arial, Helvetica, sans-serif" font-size="3.5" fill="#608868" text-anchor="middle" letter-spacing="1">AUTOMATIC</text>
+  <text x="200" y="248" font-family="Arial, Helvetica, sans-serif" font-size="3" fill="#506858" text-anchor="middle" letter-spacing="0.8">GMT</text>
+
+  <!-- === HANDS === -->
+  <!-- Hour hand -->
+  <g filter="url(#subtleShadow)">
+    <polygon points="196.5,200 200,148 203.5,200" fill="#e0e0e0" stroke="#c0c0c0" stroke-width="0.3"/>
+    <rect x="197" y="148" width="6" height="52" rx="1" fill="#e8e8e8"/>
+    <line x1="200" y1="150" x2="200" y2="198" stroke="white" stroke-width="0.8" opacity="0.5"/>
+  </g>
+  <!-- Minute hand -->
+  <g filter="url(#subtleShadow)">
+    <polygon points="198,200 200,114 202,200" fill="#e8e8e8" stroke="#d0d0d0" stroke-width="0.3"/>
+    <rect x="198" y="114" width="4" height="86" rx="0.8" fill="#f0f0f0"/>
+    <line x1="200" y1="116" x2="200" y2="198" stroke="white" stroke-width="0.6" opacity="0.4"/>
+  </g>
+  <!-- GMT hand (red, 4th hand with triangle tip) -->
+  <line x1="200" y1="240" x2="200" y2="120" stroke="#e04040" stroke-width="1" filter="url(#subtleShadow)"/>
+  <!-- GMT triangle tip -->
+  <polygon points="200,120 196,132 204,132" fill="#e04040" stroke="#c03030" stroke-width="0.3"/>
+  <!-- GMT counterweight -->
+  <circle cx="200" cy="235" r="3" fill="#e04040"/>
+  <!-- Seconds hand -->
+  <line x1="200" y1="228" x2="200" y2="118" stroke="#f0f0f0" stroke-width="0.6"/>
+  <circle cx="200" cy="225" r="2.5" fill="#f0f0f0"/>
+  <!-- Center post -->
+  <circle cx="200" cy="200" r="4" fill="#3a3a3a" stroke="#555" stroke-width="0.5"/>
+  <circle cx="200" cy="200" r="2" fill="#888"/>
+
+  <!-- === CROWN === -->
+  <rect x="314" y="192" width="12" height="16" rx="2" fill="url(#crownGrad)" stroke="#707880" stroke-width="0.5"/>
+  <line x1="317" y1="194" x2="317" y2="206" stroke="#b0b8c0" stroke-width="0.3"/>
+  <line x1="319" y1="194" x2="319" y2="206" stroke="#b0b8c0" stroke-width="0.3"/>
+  <line x1="321" y1="194" x2="321" y2="206" stroke="#b0b8c0" stroke-width="0.3"/>
+  <line x1="323" y1="194" x2="323" y2="206" stroke="#b0b8c0" stroke-width="0.3"/>
+  <line x1="325" y1="194" x2="325" y2="206" stroke="#b0b8c0" stroke-width="0.3"/>
+  <!-- Crown guards -->
+  <path d="M312 192 Q310 196 310 200 Q310 204 312 208" fill="url(#steelCase)" stroke="#808890" stroke-width="0.5"/>
+  <path d="M326 192 Q328 196 328 200 Q328 204 326 208" fill="url(#steelCase)" stroke="#808890" stroke-width="0.5"/>
+
+  <!-- === GLASS REFLECTION === -->
+  <ellipse cx="185" cy="162" rx="60" ry="50" fill="url(#glassReflect)"/>
+  <path d="M140 115 Q185 102 245 118 Q235 112 188 106 Z" fill="white" opacity="0.07"/>
+
+  <!-- === CASE EDGE HIGHLIGHTS === -->
+  <path d="M88 160 Q82 200 88 240" fill="none" stroke="white" stroke-width="0.7" opacity="0.2"/>
+  <path d="M312 165 Q316 200 312 235" fill="none" stroke="white" stroke-width="0.5" opacity="0.12"/>
+</svg>

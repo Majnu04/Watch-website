@@ -57,7 +57,7 @@ export default function ContactSection() {
               required
             />
           </div>
-          <button type="submit" className="btn-gold" style={{ alignSelf: 'flex-start' }}>
+          <button type="submit" className="btn-gold" style={{ width: '100%' }}>
             Send Enquiry
           </button>
         </form>

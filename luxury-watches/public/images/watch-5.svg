@@ -1,0 +1,215 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Rose gold case gradient -->
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5c6a0"/>
+      <stop offset="25%" stop-color="#e8a87c"/>
+      <stop offset="50%" stop-color="#f2d0b0"/>
+      <stop offset="75%" stop-color="#d4956b"/>
+      <stop offset="100%" stop-color="#c4835a"/>
+    </linearGradient>
+    <linearGradient id="roseGoldBand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c4835a"/>
+      <stop offset="30%" stop-color="#f2d0b0"/>
+      <stop offset="50%" stop-color="#f5cfaa"/>
+      <stop offset="70%" stop-color="#f2d0b0"/>
+      <stop offset="100%" stop-color="#c4835a"/>
+    </linearGradient>
+    <linearGradient id="roseGoldEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d4956b"/>
+      <stop offset="50%" stop-color="#f2d0b0"/>
+      <stop offset="100%" stop-color="#b07050"/>
+    </linearGradient>
+    <!-- Dial enamel gradient -->
+    <radialGradient id="enamelDial" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="70%" stop-color="#f8f7f4"/>
+      <stop offset="100%" stop-color="#eae8e2"/>
+    </radialGradient>
+    <!-- Blued steel hands gradient -->
+    <linearGradient id="bluedSteel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1a3a6e"/>
+      <stop offset="30%" stop-color="#2255a4"/>
+      <stop offset="50%" stop-color="#1b4d8f"/>
+      <stop offset="70%" stop-color="#2a60b5"/>
+      <stop offset="100%" stop-color="#15305a"/>
+    </linearGradient>
+    <!-- Dark brown leather strap -->
+    <linearGradient id="leatherStrap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#3a2515"/>
+      <stop offset="20%" stop-color="#5c3a24"/>
+      <stop offset="40%" stop-color="#6b4530"/>
+      <stop offset="50%" stop-color="#7a5035"/>
+      <stop offset="60%" stop-color="#6b4530"/>
+      <stop offset="80%" stop-color="#5c3a24"/>
+      <stop offset="100%" stop-color="#3a2515"/>
+    </linearGradient>
+    <linearGradient id="leatherStrapLight" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#4a3020"/>
+      <stop offset="25%" stop-color="#7a5038"/>
+      <stop offset="50%" stop-color="#8a5c40"/>
+      <stop offset="75%" stop-color="#7a5038"/>
+      <stop offset="100%" stop-color="#4a3020"/>
+    </linearGradient>
+    <!-- Glass reflection -->
+    <radialGradient id="glassReflect" cx="40%" cy="35%" r="45%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.35"/>
+      <stop offset="60%" stop-color="white" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Shadow filter -->
+    <filter id="dropShadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <filter id="innerGlow">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="2" result="blur"/>
+      <feOffset dx="0" dy="1" result="offsetBlur"/>
+      <feComposite in="SourceGraphic" in2="offsetBlur" operator="over"/>
+    </filter>
+    <!-- Alligator texture pattern -->
+    <pattern id="alligatorPattern" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
+      <rect width="12" height="12" fill="none"/>
+      <rect x="0" y="0" width="5.5" height="5.5" rx="1.5" fill="rgba(0,0,0,0.08)"/>
+      <rect x="6" y="0" width="5.5" height="5.5" rx="1.5" fill="rgba(0,0,0,0.06)"/>
+      <rect x="3" y="6" width="5.5" height="5.5" rx="1.5" fill="rgba(0,0,0,0.07)"/>
+      <rect x="9" y="6" width="2.5" height="5.5" rx="1" fill="rgba(0,0,0,0.05)"/>
+      <rect x="0" y="6" width="2.5" height="5.5" rx="1" fill="rgba(0,0,0,0.05)"/>
+    </pattern>
+  </defs>
+
+  <!-- Background subtle -->
+  <rect width="400" height="400" fill="#f5f3f0" rx="8"/>
+
+  <!-- Strap top -->
+  <g filter="url(#dropShadow)">
+    <rect x="170" y="12" width="60" height="108" rx="4" fill="url(#leatherStrap)"/>
+    <rect x="170" y="12" width="60" height="108" rx="4" fill="url(#alligatorPattern)"/>
+    <!-- Strap stitching top -->
+    <line x1="178" y1="16" x2="178" y2="116" stroke="#8a6a4a" stroke-width="0.6" stroke-dasharray="3,2.5" opacity="0.5"/>
+    <line x1="222" y1="16" x2="222" y2="116" stroke="#8a6a4a" stroke-width="0.6" stroke-dasharray="3,2.5" opacity="0.5"/>
+    <!-- Strap bottom -->
+    <rect x="170" y="280" width="60" height="108" rx="4" fill="url(#leatherStrap)"/>
+    <rect x="170" y="280" width="60" height="108" rx="4" fill="url(#alligatorPattern)"/>
+    <line x1="178" y1="284" x2="178" y2="384" stroke="#8a6a4a" stroke-width="0.6" stroke-dasharray="3,2.5" opacity="0.5"/>
+    <line x1="222" y1="284" x2="222" y2="384" stroke="#8a6a4a" stroke-width="0.6" stroke-dasharray="3,2.5" opacity="0.5"/>
+    <!-- Strap holes on bottom -->
+    <ellipse cx="200" cy="320" rx="3" ry="4" fill="#3a2515" stroke="#2a1a10" stroke-width="0.5"/>
+    <ellipse cx="200" cy="338" rx="3" ry="4" fill="#3a2515" stroke="#2a1a10" stroke-width="0.5"/>
+    <ellipse cx="200" cy="356" rx="3" ry="4" fill="#3a2515" stroke="#2a1a10" stroke-width="0.5"/>
+    <ellipse cx="200" cy="374" rx="3" ry="4" fill="#3a2515" stroke="#2a1a10" stroke-width="0.5"/>
+  </g>
+
+  <!-- Watch case -->
+  <g filter="url(#dropShadow)">
+    <!-- Case outer ring -->
+    <circle cx="200" cy="200" r="98" fill="url(#roseGold)" stroke="url(#roseGoldEdge)" stroke-width="2"/>
+    <!-- Case bezel inner ring -->
+    <circle cx="200" cy="200" r="88" fill="url(#roseGoldBand)" stroke="url(#roseGoldEdge)" stroke-width="1"/>
+    <!-- Case side highlight -->
+    <circle cx="200" cy="200" r="95" fill="none" stroke="rgba(255,255,255,0.3)" stroke-width="1.5"/>
+    <!-- Lugs top -->
+    <rect x="172" y="96" width="14" height="20" rx="4" fill="url(#roseGold)"/>
+    <rect x="214" y="96" width="14" height="20" rx="4" fill="url(#roseGold)"/>
+    <!-- Lugs bottom -->
+    <rect x="172" y="284" width="14" height="20" rx="4" fill="url(#roseGold)"/>
+    <rect x="214" y="284" width="14" height="20" rx="4" fill="url(#roseGold)"/>
+    <!-- Crown -->
+    <rect x="295" y="193" width="12" height="14" rx="3" fill="url(#roseGoldBand)" stroke="#b07050" stroke-width="0.8"/>
+    <line x1="297" y1="196" x2="297" y2="205" stroke="#c4935a" stroke-width="0.4" opacity="0.6"/>
+    <line x1="299" y1="196" x2="299" y2="205" stroke="#c4935a" stroke-width="0.4" opacity="0.6"/>
+    <line x1="301" y1="196" x2="301" y2="205" stroke="#c4935a" stroke-width="0.4" opacity="0.6"/>
+    <line x1="303" y1="196" x2="303" y2="205" stroke="#c4935a" stroke-width="0.4" opacity="0.6"/>
+  </g>
+
+  <!-- White enamel dial -->
+  <circle cx="200" cy="200" r="82" fill="url(#enamelDial)"/>
+  <!-- Subtle dial edge ring -->
+  <circle cx="200" cy="200" r="82" fill="none" stroke="#d5d0c8" stroke-width="0.5"/>
+
+  <!-- Minute track (tiny ticks) -->
+  <g stroke="#aaa89e" stroke-width="0.4" opacity="0.5">
+    <line x1="200" y1="121" x2="200" y2="125"/>
+    <line x1="212.2" y1="121.2" x2="211.8" y2="125.2" transform="rotate(6,200,200)"/>
+    <line x1="224.2" y1="122.5" x2="223.4" y2="126.4" transform="rotate(12,200,200)"/>
+    <line x1="235.8" y1="124.8" x2="234.6" y2="128.5" transform="rotate(18,200,200)"/>
+    <line x1="246.8" y1="128" x2="245.3" y2="131.5" transform="rotate(24,200,200)"/>
+    <line x1="275.5" y1="141" x2="273.4" y2="143.8" transform="rotate(36,200,200)"/>
+    <line x1="282" y1="145.2" x2="279.6" y2="147.8" transform="rotate(42,200,200)"/>
+    <line x1="287.5" y1="150.2" x2="284.9" y2="152.5" transform="rotate(48,200,200)"/>
+    <line x1="292" y1="156" x2="289.3" y2="158" transform="rotate(54,200,200)"/>
+    <line x1="298" y1="200" x2="294" y2="200"/>
+    <line x1="292" y1="244" x2="289.3" y2="242" transform="rotate(-54,200,200)"/>
+    <line x1="287.5" y1="249.8" x2="284.9" y2="247.5" transform="rotate(-48,200,200)"/>
+    <line x1="282" y1="254.8" x2="279.6" y2="252.2" transform="rotate(-42,200,200)"/>
+    <line x1="275.5" y1="259" x2="273.4" y2="256.2" transform="rotate(-36,200,200)"/>
+    <line x1="246.8" y1="272" x2="245.3" y2="268.5" transform="rotate(-24,200,200)"/>
+    <line x1="235.8" y1="275.2" x2="234.6" y2="271.5" transform="rotate(-18,200,200)"/>
+    <line x1="224.2" y1="277.5" x2="223.4" y2="273.6" transform="rotate(-12,200,200)"/>
+    <line x1="212.2" y1="278.8" x2="211.8" y2="274.8" transform="rotate(-6,200,200)"/>
+    <line x1="200" y1="279" x2="200" y2="275"/>
+    <line x1="187.8" y1="278.8" x2="188.2" y2="274.8" transform="rotate(6,200,200)"/>
+    <line x1="175.8" y1="277.5" x2="176.6" y2="273.6" transform="rotate(12,200,200)"/>
+    <line x1="164.2" y1="275.2" x2="165.4" y2="271.5" transform="rotate(18,200,200)"/>
+    <line x1="153.2" y1="272" x2="154.7" y2="268.5" transform="rotate(24,200,200)"/>
+    <line x1="124.5" y1="259" x2="126.6" y2="256.2" transform="rotate(36,200,200)"/>
+    <line x1="118" y1="254.8" x2="120.4" y2="252.2" transform="rotate(42,200,200)"/>
+    <line x1="112.5" y1="249.8" x2="115.1" y2="247.5" transform="rotate(48,200,200)"/>
+    <line x1="108" y1="244" x2="110.7" y2="242" transform="rotate(54,200,200)"/>
+    <line x1="102" y1="200" x2="106" y2="200"/>
+    <line x1="108" y1="156" x2="110.7" y2="158" transform="rotate(-54,200,200)"/>
+    <line x1="112.5" y1="150.2" x2="115.1" y2="152.5" transform="rotate(-48,200,200)"/>
+    <line x1="118" y1="145.2" x2="120.4" y2="147.8" transform="rotate(-42,200,200)"/>
+    <line x1="124.5" y1="141" x2="126.6" y2="143.8" transform="rotate(-36,200,200)"/>
+    <line x1="153.2" y1="128" x2="154.7" y2="131.5" transform="rotate(-24,200,200)"/>
+    <line x1="164.2" y1="124.8" x2="165.4" y2="128.5" transform="rotate(-18,200,200)"/>
+    <line x1="175.8" y1="122.5" x2="176.6" y2="126.4" transform="rotate(-12,200,200)"/>
+    <line x1="187.8" y1="121.2" x2="188.2" y2="125.2" transform="rotate(-6,200,200)"/>
+  </g>
+
+  <!-- Roman numeral hour markers -->
+  <text x="200" y="148" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#2a2520" letter-spacing="1">XII</text>
+  <text x="200" y="262" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#2a2520" letter-spacing="1">VI</text>
+  <text x="142" y="206" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#2a2520">IX</text>
+  <text x="260" y="206" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="18" font-weight="400" fill="#2a2520">III</text>
+  <!-- Small dot markers for other hours -->
+  <circle cx="224" cy="131" r="2" fill="#3a3530"/>
+  <circle cx="243" cy="149" r="2" fill="#3a3530"/>
+  <circle cx="260" cy="173" r="2" fill="#3a3530"/>
+  <circle cx="176" cy="131" r="2" fill="#3a3530"/>
+  <circle cx="157" cy="149" r="2" fill="#3a3530"/>
+  <circle cx="140" cy="173" r="2" fill="#3a3530"/>
+  <circle cx="140" cy="227" r="2" fill="#3a3530"/>
+  <circle cx="157" cy="251" r="2" fill="#3a3530"/>
+  <circle cx="176" cy="269" r="2" fill="#3a3530"/>
+  <circle cx="224" cy="269" r="2" fill="#3a3530"/>
+  <circle cx="243" cy="251" r="2" fill="#3a3530"/>
+  <circle cx="260" cy="227" r="2" fill="#3a3530"/>
+
+  <!-- Brand text -->
+  <text x="200" y="178" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="7" font-weight="400" fill="#6a6058" letter-spacing="3">CHRONOHAUS</text>
+  <text x="200" y="225" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="5" fill="#9a948c" letter-spacing="1.5">Classique Hand-Wind</text>
+
+  <!-- Blued steel hands -->
+  <!-- Hour hand -->
+  <g transform="rotate(-60, 200, 200)">
+    <path d="M198,200 L196.5,165 L200,155 L203.5,165 L202,200 Z" fill="url(#bluedSteel)" stroke="#152a50" stroke-width="0.3"/>
+    <line x1="200" y1="158" x2="200" y2="200" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+  </g>
+  <!-- Minute hand -->
+  <g transform="rotate(30, 200, 200)">
+    <path d="M199,200 L197.5,140 L200,128 L202.5,140 L201,200 Z" fill="url(#bluedSteel)" stroke="#152a50" stroke-width="0.3"/>
+    <line x1="200" y1="132" x2="200" y2="200" stroke="rgba(255,255,255,0.15)" stroke-width="0.5"/>
+  </g>
+  <!-- Seconds hand (thin) -->
+  <g transform="rotate(150, 200, 200)">
+    <line x1="200" y1="220" x2="200" y2="130" stroke="#2255a4" stroke-width="0.6"/>
+    <circle cx="200" cy="218" r="2" fill="#2255a4"/>
+  </g>
+  <!-- Center pinion -->
+  <circle cx="200" cy="200" r="3.5" fill="url(#roseGoldBand)" stroke="#b07050" stroke-width="0.5"/>
+  <circle cx="200" cy="200" r="1.5" fill="#d4956b"/>
+
+  <!-- Glass reflection -->
+  <ellipse cx="185" cy="170" rx="50" ry="40" fill="url(#glassReflect)" transform="rotate(-15,185,170)"/>
+  <ellipse cx="215" cy="230" rx="20" ry="12" fill="white" opacity="0.06" transform="rotate(20,215,230)"/>
+</svg>

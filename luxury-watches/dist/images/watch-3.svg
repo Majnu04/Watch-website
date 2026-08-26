@@ -1,0 +1,186 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Rose gold gradient -->
+    <linearGradient id="roseGold" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e8c4a8"/>
+      <stop offset="20%" stop-color="#d4a080"/>
+      <stop offset="40%" stop-color="#f0d4c0"/>
+      <stop offset="60%" stop-color="#c89070"/>
+      <stop offset="80%" stop-color="#e0b898"/>
+      <stop offset="100%" stop-color="#d0a080"/>
+    </linearGradient>
+    <!-- Rose gold bezel -->
+    <linearGradient id="roseGoldBezel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#f0d4c0"/>
+      <stop offset="50%" stop-color="#c89070"/>
+      <stop offset="100%" stop-color="#e0b898"/>
+    </linearGradient>
+    <!-- Mother of pearl dial -->
+    <radialGradient id="pearlDial" cx="45%" cy="40%" r="55%">
+      <stop offset="0%" stop-color="#f8f0f0"/>
+      <stop offset="15%" stop-color="#f0e8ec"/>
+      <stop offset="30%" stop-color="#e8e0e8"/>
+      <stop offset="45%" stop-color="#f0ece8"/>
+      <stop offset="55%" stop-color="#e8e4f0"/>
+      <stop offset="70%" stop-color="#f0e8e4"/>
+      <stop offset="85%" stop-color="#ece4e8"/>
+      <stop offset="100%" stop-color="#e4dce4"/>
+    </radialGradient>
+    <!-- Iridescent overlay -->
+    <radialGradient id="iridescent" cx="35%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#ffd0e0" stop-opacity="0.3"/>
+      <stop offset="30%" stop-color="#d0e8ff" stop-opacity="0.15"/>
+      <stop offset="60%" stop-color="#e8d0ff" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#ffd8e8" stop-opacity="0.1"/>
+    </radialGradient>
+    <!-- Ceramic bracelet gradient -->
+    <linearGradient id="ceramicLink" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#e0d8dc"/>
+      <stop offset="25%" stop-color="#f0eaee"/>
+      <stop offset="50%" stop-color="#e8e0e4"/>
+      <stop offset="75%" stop-color="#f0eaee"/>
+      <stop offset="100%" stop-color="#dcd4d8"/>
+    </linearGradient>
+    <!-- Ceramic link side shade -->
+    <linearGradient id="ceramicSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#d0c8cc"/>
+      <stop offset="50%" stop-color="#e8e0e4"/>
+      <stop offset="100%" stop-color="#d8d0d4"/>
+    </linearGradient>
+    <!-- Rose gold hand gradient -->
+    <linearGradient id="roseGoldHand" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#c89070"/>
+      <stop offset="50%" stop-color="#f0d4c0"/>
+      <stop offset="100%" stop-color="#c89070"/>
+    </linearGradient>
+    <!-- Glass reflection -->
+    <radialGradient id="glassReflect" cx="38%" cy="32%" r="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.3"/>
+      <stop offset="35%" stop-color="white" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Shadow filters -->
+    <filter id="watchShadow" x="-10%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#603040" flood-opacity="0.2"/>
+    </filter>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="0.5" stdDeviation="0.8" flood-color="#804050" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f5f0f0"/>
+
+  <!-- Surface shadow -->
+  <ellipse cx="200" cy="350" rx="55" ry="8" fill="#804050" opacity="0.08"/>
+
+  <!-- === UPPER BRACELET (ceramic links) === -->
+  <!-- Center links -->
+  <rect x="182" y="18" width="36" height="50" rx="3" fill="url(#ceramicLink)" stroke="#c8c0c4" stroke-width="0.3"/>
+  <!-- Side links left -->
+  <rect x="168" y="20" width="14" height="46" rx="2" fill="url(#ceramicSide)" stroke="#c0b8bc" stroke-width="0.3"/>
+  <!-- Side links right -->
+  <rect x="218" y="20" width="14" height="46" rx="2" fill="url(#ceramicSide)" stroke="#c0b8bc" stroke-width="0.3"/>
+  <!-- Link gap lines upper -->
+  <line x1="182" y1="28" x2="218" y2="28" stroke="#c8c0c4" stroke-width="0.4"/>
+  <line x1="182" y1="38" x2="218" y2="38" stroke="#c8c0c4" stroke-width="0.4"/>
+  <line x1="182" y1="48" x2="218" y2="48" stroke="#c8c0c4" stroke-width="0.4"/>
+  <line x1="182" y1="58" x2="218" y2="58" stroke="#c8c0c4" stroke-width="0.4"/>
+  <!-- Side link gaps -->
+  <line x1="168" y1="32" x2="182" y2="32" stroke="#c0b8bc" stroke-width="0.3"/>
+  <line x1="168" y1="44" x2="182" y2="44" stroke="#c0b8bc" stroke-width="0.3"/>
+  <line x1="168" y1="56" x2="182" y2="56" stroke="#c0b8bc" stroke-width="0.3"/>
+  <line x1="218" y1="32" x2="232" y2="32" stroke="#c0b8bc" stroke-width="0.3"/>
+  <line x1="218" y1="44" x2="232" y2="44" stroke="#c0b8bc" stroke-width="0.3"/>
+  <line x1="218" y1="56" x2="232" y2="56" stroke="#c0b8bc" stroke-width="0.3"/>
+  <!-- Bracelet highlights -->
+  <rect x="188" y="22" width="10" height="44" rx="1" fill="white" opacity="0.12"/>
+
+  <!-- === LOWER BRACELET (ceramic links) === -->
+  <rect x="182" y="332" width="36" height="50" rx="3" fill="url(#ceramicLink)" stroke="#c8c0c4" stroke-width="0.3"/>
+  <rect x="168" y="334" width="14" height="46" rx="2" fill="url(#ceramicSide)" stroke="#c0b8bc" stroke-width="0.3"/>
+  <rect x="218" y="334" width="14" height="46" rx="2" fill="url(#ceramicSide)" stroke="#c0b8bc" stroke-width="0.3"/>
+  <!-- Link gap lines lower -->
+  <line x1="182" y1="342" x2="218" y2="342" stroke="#c8c0c4" stroke-width="0.4"/>
+  <line x1="182" y1="352" x2="218" y2="352" stroke="#c8c0c4" stroke-width="0.4"/>
+  <line x1="182" y1="362" x2="218" y2="362" stroke="#c8c0c4" stroke-width="0.4"/>
+  <line x1="182" y1="372" x2="218" y2="372" stroke="#c8c0c4" stroke-width="0.4"/>
+  <line x1="168" y1="346" x2="182" y2="346" stroke="#c0b8bc" stroke-width="0.3"/>
+  <line x1="168" y1="358" x2="182" y2="358" stroke="#c0b8bc" stroke-width="0.3"/>
+  <line x1="168" y1="370" x2="182" y2="370" stroke="#c0b8bc" stroke-width="0.3"/>
+  <line x1="218" y1="346" x2="232" y2="346" stroke="#c0b8bc" stroke-width="0.3"/>
+  <line x1="218" y1="358" x2="232" y2="358" stroke="#c0b8bc" stroke-width="0.3"/>
+  <line x1="218" y1="370" x2="232" y2="370" stroke="#c0b8bc" stroke-width="0.3"/>
+  <rect x="188" y="336" width="10" height="44" rx="1" fill="white" opacity="0.12"/>
+
+  <!-- === ROSE GOLD CASE (slimmer) === -->
+  <circle cx="200" cy="200" r="105" fill="url(#roseGold)" filter="url(#watchShadow)"/>
+  <circle cx="200" cy="200" r="105" fill="none" stroke="#a07058" stroke-width="0.8"/>
+
+  <!-- === BEZEL (rose gold, thin) === -->
+  <circle cx="200" cy="200" r="96" fill="url(#roseGoldBezel)" stroke="#b08060" stroke-width="0.6"/>
+  <circle cx="200" cy="200" r="93" fill="none" stroke="#e0c0a8" stroke-width="0.4"/>
+
+  <!-- === DIAL (mother of pearl) === -->
+  <circle cx="200" cy="200" r="88" fill="url(#pearlDial)"/>
+  <circle cx="200" cy="200" r="88" fill="url(#iridescent)"/>
+  <circle cx="200" cy="200" r="88" fill="none" stroke="#c8b0a0" stroke-width="0.4"/>
+
+  <!-- === HOUR MARKERS (rose gold indices) === -->
+  <!-- 12 -->
+  <polygon points="200,116 197,126 203,126" fill="url(#roseGoldHand)" filter="url(#subtleShadow)"/>
+  <!-- 1 -->
+  <polygon points="233,122 231,130 235,130" fill="url(#roseGoldHand)" transform="rotate(30 233 126)"/>
+  <!-- 2 -->
+  <polygon points="256,140 254,148 258,148" fill="url(#roseGoldHand)" transform="rotate(60 256 144)"/>
+  <!-- 3 -->
+  <polygon points="268,200 258,197 258,203" fill="url(#roseGoldHand)" filter="url(#subtleShadow)"/>
+  <!-- 4 -->
+  <polygon points="256,260 254,252 258,252" fill="url(#roseGoldHand)" transform="rotate(-60 256 256)"/>
+  <!-- 5 -->
+  <polygon points="233,278 231,270 235,270" fill="url(#roseGoldHand)" transform="rotate(-30 233 274)"/>
+  <!-- 6 -->
+  <polygon points="200,284 197,274 203,274" fill="url(#roseGoldHand)" filter="url(#subtleShadow)"/>
+  <!-- 7 -->
+  <polygon points="167,278 169,270 165,270" fill="url(#roseGoldHand)" transform="rotate(30 167 274)"/>
+  <!-- 8 -->
+  <polygon points="144,260 146,252 142,252" fill="url(#roseGoldHand)" transform="rotate(60 144 256)"/>
+  <!-- 9 -->
+  <polygon points="132,200 142,197 142,203" fill="url(#roseGoldHand)" filter="url(#subtleShadow)"/>
+  <!-- 10 -->
+  <polygon points="144,140 146,148 142,148" fill="url(#roseGoldHand)" transform="rotate(-60 144 144)"/>
+  <!-- 11 -->
+  <polygon points="167,122 169,130 165,130" fill="url(#roseGoldHand)" transform="rotate(-30 167 126)"/>
+
+  <!-- === BRAND TEXT === -->
+  <text x="200" y="168" font-family="Georgia, 'Times New Roman', serif" font-size="6.5" fill="#a07860" text-anchor="middle" letter-spacing="2.5" font-weight="normal">CHRONOHAUS</text>
+  <text x="200" y="177" font-family="Georgia, 'Times New Roman', serif" font-size="4" fill="#b89880" text-anchor="middle" letter-spacing="1.2">AURA CERAMIC</text>
+  <text x="200" y="240" font-family="Georgia, 'Times New Roman', serif" font-size="3.5" fill="#c0a090" text-anchor="middle" letter-spacing="1">QUARTZ</text>
+
+  <!-- === HANDS (rose gold) === -->
+  <!-- Hour hand - elegant leaf shape -->
+  <path d="M198.5,200 Q196,175 200,140 Q204,175 201.5,200 Z" fill="url(#roseGoldHand)" stroke="#b07858" stroke-width="0.3" filter="url(#subtleShadow)"/>
+  <line x1="200" y1="142" x2="200" y2="198" stroke="#f0d4c0" stroke-width="0.5" opacity="0.5"/>
+  <!-- Minute hand - longer leaf -->
+  <path d="M199,200 Q197,165 200,112 Q203,165 201,200 Z" fill="url(#roseGoldHand)" stroke="#b07858" stroke-width="0.3" filter="url(#subtleShadow)"/>
+  <line x1="200" y1="114" x2="200" y2="198" stroke="#f0d4c0" stroke-width="0.4" opacity="0.4"/>
+  <!-- Seconds hand - thin rose gold -->
+  <line x1="200" y1="225" x2="200" y2="125" stroke="#c89070" stroke-width="0.5"/>
+  <circle cx="200" cy="222" r="2" fill="#c89070"/>
+  <!-- Center -->
+  <circle cx="200" cy="200" r="3.5" fill="url(#roseGold)" stroke="#a07050" stroke-width="0.4"/>
+  <circle cx="200" cy="200" r="1.5" fill="#e0c0a8"/>
+
+  <!-- === CROWN === -->
+  <circle cx="302" cy="200" r="6" fill="url(#roseGold)" stroke="#a07050" stroke-width="0.5"/>
+  <circle cx="302" cy="200" r="3" fill="#e0c0a8" opacity="0.6"/>
+
+  <!-- === GLASS REFLECTION === -->
+  <ellipse cx="185" cy="165" rx="55" ry="45" fill="url(#glassReflect)"/>
+  <!-- Subtle arc reflection -->
+  <path d="M150 120 Q190 108 240 120 Q230 116 190 112 Z" fill="white" opacity="0.1"/>
+
+  <!-- === CASE HIGHLIGHTS === -->
+  <path d="M100 165 Q95 200 100 235" fill="none" stroke="white" stroke-width="0.6" opacity="0.25"/>
+  <path d="M300 170 Q303 200 300 230" fill="none" stroke="white" stroke-width="0.4" opacity="0.15"/>
+</svg>

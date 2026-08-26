@@ -125,7 +125,7 @@ export default function ScrollExperience() {
   const [activePhase, setActivePhase] = useState(0)
 
   const dpr = bp === 'mobile' ? 1.5 : bp === 'tablet' ? 2 : Math.min(window.devicePixelRatio, 2)
-  const spacerHeight = bp === 'mobile' ? '500vh' : bp === 'tablet' ? '550vh' : '600vh'
+  const spacerHeight = bp === 'mobile' ? '400vh' : bp === 'tablet' ? '500vh' : '600vh'
 
   useEffect(() => {
     let ticking = false
