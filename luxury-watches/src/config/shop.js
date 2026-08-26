@@ -10,9 +10,9 @@ export const shop = {
     'Time is more than a measurement.',
     'It is a memory.',
   ],
-  address: '42 Horology Lane, Jubilee Hills, Hyderabad, Telangana 500033',
-  phone: '+91 98765 43210',
-  whatsapp: '+919876543210',
+  address: '47-10-30, Waltair Main Road,opp. Old昌昌 Complex, Visakhapatnam, Andhra Pradesh 530002',
+  phone: '+917893804498',
+  whatsapp: '+917893804498',
   email: 'hello@chronohaus.in',
   hours: {
     weekdays: '10:00 AM — 8:00 PM',
@@ -28,5 +28,5 @@ export const shop = {
     'Seiko', 'Citizen', 'Casio', 'Titan', 'Fossil',
     'Rado', 'Cartier', 'Breitling', 'IWC', 'Panerai',
   ],
-  mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2!2d78.4!3d17.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDI1JzEyLjAiTiA3OMKwMjQnMDAuMCJF!5e0!3m2!1sen!2sin',
+  mapUrl: 'https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3806.2!2d83.3!3d17.72!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQzJzEyLjAiTiA4M8KwMTgnMDAuMCJF!5e0!3m2!1sen!2sin',
 }

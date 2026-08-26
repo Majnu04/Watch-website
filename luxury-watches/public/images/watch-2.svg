@@ -1,0 +1,276 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <defs>
+    <!-- Titanium case gradient -->
+    <linearGradient id="titaniumCase" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#d4d8dc"/>
+      <stop offset="25%" stop-color="#a8b0b8"/>
+      <stop offset="50%" stop-color="#c8cdd2"/>
+      <stop offset="75%" stop-color="#8a9299"/>
+      <stop offset="100%" stop-color="#b0b8c0"/>
+    </linearGradient>
+    <!-- Titanium bezel gradient -->
+    <linearGradient id="titaniumBezel" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#c0c8d0"/>
+      <stop offset="50%" stop-color="#9aa4ae"/>
+      <stop offset="100%" stop-color="#b8c0c8"/>
+    </linearGradient>
+    <!-- Navy dial gradient - matte -->
+    <radialGradient id="navyDial" cx="50%" cy="45%" r="50%">
+      <stop offset="0%" stop-color="#1a2744"/>
+      <stop offset="60%" stop-color="#15203a"/>
+      <stop offset="100%" stop-color="#0d1528"/>
+    </radialGradient>
+    <!-- Rubber strap gradient -->
+    <linearGradient id="rubberStrap" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1a1a2e"/>
+      <stop offset="30%" stop-color="#2a2a40"/>
+      <stop offset="50%" stop-color="#222238"/>
+      <stop offset="70%" stop-color="#2a2a40"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <!-- Sub-dial gradient -->
+    <radialGradient id="subDial" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#182440"/>
+      <stop offset="100%" stop-color="#0f1a30"/>
+    </radialGradient>
+    <!-- Glass reflection -->
+    <radialGradient id="glassReflect" cx="40%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="white" stop-opacity="0.25"/>
+      <stop offset="40%" stop-color="white" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="white" stop-opacity="0"/>
+    </radialGradient>
+    <!-- Shadow filter -->
+    <filter id="watchShadow" x="-10%" y="-5%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#000000" flood-opacity="0.35"/>
+    </filter>
+    <filter id="innerShadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="1" stdDeviation="2" flood-color="#000000" flood-opacity="0.4"/>
+    </filter>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="1" stdDeviation="1" flood-color="#000000" flood-opacity="0.3"/>
+    </filter>
+    <!-- Crown gradient -->
+    <linearGradient id="crownGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#9aa4ae"/>
+      <stop offset="50%" stop-color="#d0d4d8"/>
+      <stop offset="100%" stop-color="#8a9299"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f0f0f0"/>
+
+  <!-- Watch shadow on surface -->
+  <ellipse cx="200" cy="340" rx="70" ry="12" fill="#000" opacity="0.15" filter="url(#watchShadow)"/>
+
+  <!-- === UPPER STRAP (rubber) === -->
+  <path d="M170 70 L170 10 Q170 2 178 2 L222 2 Q230 2 230 10 L230 70" fill="url(#rubberStrap)" stroke="#111125" stroke-width="0.5"/>
+  <!-- Strap texture lines upper -->
+  <line x1="175" y1="10" x2="175" y2="68" stroke="#15152a" stroke-width="0.5" opacity="0.6"/>
+  <line x1="185" y1="8" x2="185" y2="68" stroke="#303050" stroke-width="0.3" opacity="0.4"/>
+  <line x1="195" y1="6" x2="195" y2="68" stroke="#303050" stroke-width="0.3" opacity="0.4"/>
+  <line x1="205" y1="6" x2="205" y2="68" stroke="#303050" stroke-width="0.3" opacity="0.4"/>
+  <line x1="215" y1="8" x2="215" y2="68" stroke="#303050" stroke-width="0.3" opacity="0.4"/>
+  <line x1="225" y1="10" x2="225" y2="68" stroke="#15152a" stroke-width="0.5" opacity="0.6"/>
+  <!-- Strap highlight upper -->
+  <path d="M185 8 Q185 4 200 4 Q215 4 215 8 L215 68 L185 68 Z" fill="white" opacity="0.04"/>
+
+  <!-- === LOWER STRAP (rubber) === -->
+  <path d="M170 330 L170 390 Q170 398 178 398 L222 398 Q230 398 230 390 L230 330" fill="url(#rubberStrap)" stroke="#111125" stroke-width="0.5"/>
+  <!-- Strap texture lines lower -->
+  <line x1="175" y1="332" x2="175" y2="390" stroke="#15152a" stroke-width="0.5" opacity="0.6"/>
+  <line x1="185" y1="332" x2="185" y2="392" stroke="#303050" stroke-width="0.3" opacity="0.4"/>
+  <line x1="195" y1="332" x2="195" y2="394" stroke="#303050" stroke-width="0.3" opacity="0.4"/>
+  <line x1="205" y1="332" x2="205" y2="394" stroke="#303050" stroke-width="0.3" opacity="0.4"/>
+  <line x1="215" y1="332" x2="215" y2="392" stroke="#303050" stroke-width="0.3" opacity="0.4"/>
+  <line x1="225" y1="332" x2="225" y2="390" stroke="#15152a" stroke-width="0.5" opacity="0.6"/>
+  <!-- Strap highlight lower -->
+  <path d="M185 332 L185 392 Q185 394 200 394 Q215 394 215 392 L215 332 Z" fill="white" opacity="0.04"/>
+
+  <!-- === TITANIUM CASE === -->
+  <circle cx="200" cy="200" r="120" fill="url(#titaniumCase)" filter="url(#watchShadow)"/>
+  <!-- Case edge ring -->
+  <circle cx="200" cy="200" r="120" fill="none" stroke="#7a8289" stroke-width="1"/>
+  <circle cx="200" cy="200" r="118" fill="none" stroke="#d8dce0" stroke-width="0.5" opacity="0.5"/>
+
+  <!-- === BEZEL (titanium) === -->
+  <circle cx="200" cy="200" r="108" fill="url(#titaniumBezel)" stroke="#808890" stroke-width="1"/>
+  <circle cx="200" cy="200" r="106" fill="none" stroke="#c0c8d0" stroke-width="0.5"/>
+
+  <!-- === DIAL === -->
+  <circle cx="200" cy="200" r="98" fill="url(#navyDial)"/>
+  <circle cx="200" cy="200" r="98" fill="none" stroke="#0a1020" stroke-width="0.5"/>
+
+  <!-- === HOUR MARKERS === -->
+  <!-- 12 -->
+  <rect x="196" y="110" width="8" height="20" rx="1" fill="#e8e8e8" filter="url(#subtleShadow)"/>
+  <!-- 1 -->
+  <rect x="240" y="114" width="6" height="16" rx="1" fill="#d0d0d0" transform="rotate(30 243 122)"/>
+  <!-- 2 -->
+  <rect x="268" y="128" width="6" height="16" rx="1" fill="#d0d0d0" transform="rotate(60 271 136)"/>
+  <!-- 3 -->
+  <rect x="278" y="196" width="20" height="8" rx="1" fill="#e8e8e8" filter="url(#subtleShadow)"/>
+  <!-- 4 -->
+  <rect x="268" y="256" width="6" height="16" rx="1" fill="#d0d0d0" transform="rotate(-60 271 264)"/>
+  <!-- 5 -->
+  <rect x="240" y="270" width="6" height="16" rx="1" fill="#d0d0d0" transform="rotate(-30 243 278)"/>
+  <!-- 6 -->
+  <rect x="196" y="270" width="8" height="20" rx="1" fill="#e8e8e8" filter="url(#subtleShadow)"/>
+  <!-- 7 -->
+  <rect x="148" y="270" width="6" height="16" rx="1" fill="#d0d0d0" transform="rotate(30 151 278)"/>
+  <!-- 8 -->
+  <rect x="126" y="256" width="6" height="16" rx="1" fill="#d0d0d0" transform="rotate(60 129 264)"/>
+  <!-- 9 -->
+  <rect x="102" y="196" width="20" height="8" rx="1" fill="#e8e8e8" filter="url(#subtleShadow)"/>
+  <!-- 10 -->
+  <rect x="126" y="128" width="6" height="16" rx="1" fill="#d0d0d0" transform="rotate(-60 129 136)"/>
+  <!-- 11 -->
+  <rect x="148" y="114" width="6" height="16" rx="1" fill="#d0d0d0" transform="rotate(-30 151 122)"/>
+
+  <!-- Minute tick marks -->
+  <g stroke="#4a5570" stroke-width="0.5" opacity="0.6">
+    <line x1="200" y1="104" x2="200" y2="108"/>
+    <line x1="212" y1="104.5" x2="211.6" y2="108.4" transform="rotate(6 200 200)"/>
+    <line x1="224" y1="106" x2="223.2" y2="109.8" transform="rotate(12 200 200)"/>
+    <line x1="235" y1="109" x2="233.8" y2="112.6" transform="rotate(18 200 200)"/>
+    <line x1="246" y1="113" x2="244.4" y2="116.4" transform="rotate(24 200 200)"/>
+    <line x1="256" y1="119" x2="254" y2="122.2" transform="rotate(36 200 200)"/>
+    <line x1="264" y1="126" x2="261.8" y2="128.8" transform="rotate(42 200 200)"/>
+    <line x1="270" y1="135" x2="267.6" y2="137.4" transform="rotate(48 200 200)"/>
+    <line x1="276" y1="145" x2="273.4" y2="147" transform="rotate(54 200 200)"/>
+    <line x1="282" y1="162" x2="279.8" y2="163.6" transform="rotate(66 200 200)"/>
+    <line x1="286" y1="172" x2="283.8" y2="173.2" transform="rotate(72 200 200)"/>
+    <line x1="290" y1="183" x2="287.8" y2="183.8" transform="rotate(78 200 200)"/>
+    <line x1="292" y1="200" x2="288" y2="200"/>
+    <line x1="290" y1="217" x2="287.8" y2="216.2" transform="rotate(-78 200 200)"/>
+    <line x1="286" y1="228" x2="283.8" y2="226.8" transform="rotate(-72 200 200)"/>
+    <line x1="282" y1="238" x2="279.8" y2="236.4" transform="rotate(-66 200 200)"/>
+    <line x1="276" y1="255" x2="273.4" y2="253" transform="rotate(-54 200 200)"/>
+    <line x1="270" y1="265" x2="267.6" y2="262.6" transform="rotate(-48 200 200)"/>
+    <line x1="264" y1="274" x2="261.8" y2="271.2" transform="rotate(-42 200 200)"/>
+    <line x1="256" y1="281" x2="254" y2="277.8" transform="rotate(-36 200 200)"/>
+    <line x1="246" y1="287" x2="244.4" y2="283.6" transform="rotate(-24 200 200)"/>
+    <line x1="235" y1="291" x2="233.8" y2="287.4" transform="rotate(-18 200 200)"/>
+    <line x1="224" y1="294" x2="223.2" y2="290.2" transform="rotate(-12 200 200)"/>
+    <line x1="212" y1="295.5" x2="211.6" y2="291.6" transform="rotate(-6 200 200)"/>
+    <line x1="200" y1="296" x2="200" y2="292"/>
+    <line x1="188" y1="295.5" x2="188.4" y2="291.6" transform="rotate(6 200 200)"/>
+    <line x1="176" y1="294" x2="176.8" y2="290.2" transform="rotate(12 200 200)"/>
+    <line x1="165" y1="291" x2="166.2" y2="287.4" transform="rotate(18 200 200)"/>
+    <line x1="154" y1="287" x2="155.6" y2="283.6" transform="rotate(24 200 200)"/>
+    <line x1="144" y1="281" x2="146" y2="277.8" transform="rotate(36 200 200)"/>
+    <line x1="136" y1="274" x2="138.2" y2="271.2" transform="rotate(42 200 200)"/>
+    <line x1="130" y1="265" x2="132.4" y2="262.6" transform="rotate(48 200 200)"/>
+    <line x1="124" y1="255" x2="126.6" y2="253" transform="rotate(54 200 200)"/>
+    <line x1="118" y1="238" x2="120.2" y2="236.4" transform="rotate(66 200 200)"/>
+    <line x1="114" y1="228" x2="116.2" y2="226.8" transform="rotate(72 200 200)"/>
+    <line x1="110" y1="217" x2="112.2" y2="216.2" transform="rotate(78 200 200)"/>
+    <line x1="108" y1="200" x2="112" y2="200"/>
+    <line x1="110" y1="183" x2="112.2" y2="183.8" transform="rotate(-78 200 200)"/>
+    <line x1="114" y1="172" x2="116.2" y2="173.2" transform="rotate(-72 200 200)"/>
+    <line x1="118" y1="162" x2="120.2" y2="163.6" transform="rotate(-66 200 200)"/>
+    <line x1="124" y1="145" x2="126.6" y2="147" transform="rotate(-54 200 200)"/>
+    <line x1="130" y1="135" x2="132.4" y2="137.4" transform="rotate(-48 200 200)"/>
+    <line x1="136" y1="126" x2="138.2" y2="128.8" transform="rotate(-42 200 200)"/>
+    <line x1="144" y1="119" x2="146" y2="122.2" transform="rotate(-36 200 200)"/>
+    <line x1="154" y1="113" x2="155.6" y2="116.4" transform="rotate(-24 200 200)"/>
+    <line x1="165" y1="109" x2="166.2" y2="112.6" transform="rotate(-18 200 200)"/>
+    <line x1="176" y1="106" x2="176.8" y2="109.8" transform="rotate(-12 200 200)"/>
+    <line x1="188" y1="104.5" x2="188.4" y2="108.4" transform="rotate(-6 200 200)"/>
+  </g>
+
+  <!-- === CHRONOGRAPH SUB-DIALS === -->
+
+  <!-- Sub-dial at 12 (running seconds) -->
+  <circle cx="200" cy="148" r="24" fill="url(#subDial)" stroke="#3a4a6a" stroke-width="0.8"/>
+  <circle cx="200" cy="148" r="22" fill="none" stroke="#2a3a5a" stroke-width="0.3"/>
+  <!-- Sub-dial markers -->
+  <g stroke="#5a6a8a" stroke-width="0.5">
+    <line x1="200" y1="126.5" x2="200" y2="129"/>
+    <line x1="200" y1="167" x2="200" y2="169.5"/>
+    <line x1="178.5" y1="148" x2="181" y2="148"/>
+    <line x1="219" y1="148" x2="221.5" y2="148"/>
+  </g>
+  <!-- Sub-dial hand -->
+  <line x1="200" y1="148" x2="200" y2="130" stroke="white" stroke-width="0.6" transform="rotate(156 200 148)"/>
+  <circle cx="200" cy="148" r="1.5" fill="white"/>
+
+  <!-- Sub-dial at 9 (30-min counter) -->
+  <circle cx="150" cy="200" r="24" fill="url(#subDial)" stroke="#3a4a6a" stroke-width="0.8"/>
+  <circle cx="150" cy="200" r="22" fill="none" stroke="#2a3a5a" stroke-width="0.3"/>
+  <!-- Sub-dial markers -->
+  <g stroke="#5a6a8a" stroke-width="0.5">
+    <line x1="150" y1="178.5" x2="150" y2="181"/>
+    <line x1="150" y1="219" x2="150" y2="221.5"/>
+    <line x1="128.5" y1="200" x2="131" y2="200"/>
+    <line x1="169" y1="200" x2="171.5" y2="200"/>
+  </g>
+  <!-- Sub-dial hand -->
+  <line x1="150" y1="200" x2="150" y2="182" stroke="white" stroke-width="0.6" transform="rotate(48 150 200)"/>
+  <circle cx="150" cy="200" r="1.5" fill="white"/>
+
+  <!-- Sub-dial at 6 (12-hour counter) -->
+  <circle cx="200" cy="252" r="24" fill="url(#subDial)" stroke="#3a4a6a" stroke-width="0.8"/>
+  <circle cx="200" cy="252" r="22" fill="none" stroke="#2a3a5a" stroke-width="0.3"/>
+  <!-- Sub-dial markers -->
+  <g stroke="#5a6a8a" stroke-width="0.5">
+    <line x1="200" y1="230.5" x2="200" y2="233"/>
+    <line x1="200" y1="271" x2="200" y2="273.5"/>
+    <line x1="178.5" y1="252" x2="181" y2="252"/>
+    <line x1="219" y1="252" x2="221.5" y2="252"/>
+  </g>
+  <!-- Sub-dial hand -->
+  <line x1="200" y1="252" x2="200" y2="234" stroke="white" stroke-width="0.6" transform="rotate(210 200 252)"/>
+  <circle cx="200" cy="252" r="1.5" fill="white"/>
+
+  <!-- Date window -->
+  <rect x="258" y="194" width="22" height="14" rx="2" fill="#0d1528" stroke="#3a4a6a" stroke-width="0.5"/>
+  <text x="269" y="205" font-family="Arial, sans-serif" font-size="10" fill="#d0d0d0" text-anchor="middle" font-weight="bold">26</text>
+
+  <!-- === BRAND TEXT === -->
+  <text x="200" y="170" font-family="Arial, Helvetica, sans-serif" font-size="7" fill="#8090b0" text-anchor="middle" letter-spacing="3" font-weight="bold">CHRONOHAUS</text>
+  <text x="200" y="179" font-family="Arial, Helvetica, sans-serif" font-size="4" fill="#506080" text-anchor="middle" letter-spacing="1.5">MERIDIAN CHRONOGRAPH</text>
+  <text x="200" y="226" font-family="Arial, Helvetica, sans-serif" font-size="3.5" fill="#405070" text-anchor="middle" letter-spacing="1">AUTOMATIC</text>
+
+  <!-- === HANDS === -->
+  <!-- Hour hand -->
+  <g filter="url(#subtleShadow)">
+    <polygon points="197,200 200,145 203,200" fill="#e0e0e0" stroke="#c0c0c0" stroke-width="0.3"/>
+    <rect x="197" y="145" width="6" height="55" rx="1" fill="#e8e8e8"/>
+    <line x1="200" y1="145" x2="200" y2="200" stroke="white" stroke-width="0.8" opacity="0.6"/>
+  </g>
+  <!-- Minute hand -->
+  <g filter="url(#subtleShadow)">
+    <polygon points="198,200 200,115 202,200" fill="#e8e8e8" stroke="#d0d0d0" stroke-width="0.3"/>
+    <rect x="198" y="115" width="4" height="85" rx="0.8" fill="#f0f0f0"/>
+    <line x1="200" y1="115" x2="200" y2="200" stroke="white" stroke-width="0.6" opacity="0.5"/>
+  </g>
+  <!-- Seconds hand -->
+  <line x1="200" y1="230" x2="200" y2="120" stroke="#cc3333" stroke-width="0.8"/>
+  <circle cx="200" cy="230" r="3" fill="#cc3333"/>
+  <circle cx="200" cy="200" r="4" fill="#2a2a3a" stroke="#555" stroke-width="0.5"/>
+  <circle cx="200" cy="200" r="2" fill="#888"/>
+
+  <!-- === CHRONOGRAPH PUSHERS === -->
+  <!-- Top pusher -->
+  <rect x="310" y="175" width="14" height="12" rx="2" fill="url(#titaniumCase)" stroke="#808890" stroke-width="0.5"/>
+  <rect x="311" y="178" width="2" height="6" rx="1" fill="#c0c8d0"/>
+  <!-- Bottom pusher -->
+  <rect x="310" y="213" width="14" height="12" rx="2" fill="url(#titaniumCase)" stroke="#808890" stroke-width="0.5"/>
+  <rect x="311" y="216" width="2" height="6" rx="1" fill="#c0c8d0"/>
+  <!-- Crown -->
+  <rect x="314" y="193" width="12" height="14" rx="2" fill="url(#crownGrad)" stroke="#707880" stroke-width="0.5"/>
+  <line x1="317" y1="195" x2="317" y2="205" stroke="#a0a8b0" stroke-width="0.3"/>
+  <line x1="319" y1="195" x2="319" y2="205" stroke="#a0a8b0" stroke-width="0.3"/>
+  <line x1="321" y1="195" x2="321" y2="205" stroke="#a0a8b0" stroke-width="0.3"/>
+  <line x1="323" y1="195" x2="323" y2="205" stroke="#a0a8b0" stroke-width="0.3"/>
+
+  <!-- === GLASS REFLECTION === -->
+  <ellipse cx="185" cy="165" rx="65" ry="55" fill="url(#glassReflect)"/>
+  <!-- Top edge reflection -->
+  <path d="M145 110 Q180 100 240 112 Q230 108 180 104 Z" fill="white" opacity="0.08"/>
+
+  <!-- === CASE EDGE HIGHLIGHTS === -->
+  <path d="M95 160 Q90 200 95 240" fill="none" stroke="white" stroke-width="0.8" opacity="0.2"/>
+  <path d="M305 160 Q310 200 305 240" fill="none" stroke="white" stroke-width="0.5" opacity="0.15"/>
+</svg>
