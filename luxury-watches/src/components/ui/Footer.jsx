@@ -32,7 +32,12 @@ export default function Footer() {
       </div>
       <div className="footer-bottom">
         <span>© 2026 {shop.name}. All rights reserved.</span>
-        <span>Crafted with precision</span>
+        <span>
+          Designed by{' '}
+          <a href="https://elitedigitalsolutions.co.in/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--gold)', transition: 'color 0.3s' }}>
+            Elite Digitals
+          </a>
+        </span>
       </div>
     </footer>
   )
